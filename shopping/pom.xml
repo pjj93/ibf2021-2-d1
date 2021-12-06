@@ -54,7 +54,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>ibf2021.d1</mainClass>
+                <mainClass>ibf2021.d1.Cart</mainClass>
               </manifest>
             </archive>
           </configuration>  
