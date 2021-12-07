@@ -11,34 +11,34 @@ public class Cart {
     public Cart() {
         System.out.println("Welcome to your shopping cart");
     }
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        Cart cart = new Cart();
+    // public static void main(String[] args) {
+    //     Scanner scan = new Scanner(System.in);
+    //     Cart cart = new Cart();
         
-        while (true) {
-            String action = scan.next();
-            if (action.equals("list"))
-                cart.show();
-            else if (action.equals("add")) {
-                if (scan.hasNextLine())
-                    cart.addItems(scan.nextLine().trim());
-            }
-            else if (action.equals("delete")) {
-                if (scan.hasNextInt())
-                    try {
-                        cart.delete(scan.nextInt());
-                    } catch (IndexOutOfBoundsException e) {
-                        System.out.println("Incorrect item index");
-                    }
-                else
-                    System.out.println(scan.nextLine() + " is not a valid index number");
-            }
-            else if (action.equals("stop"))
-                break;
-        }
+    //     while (true) {
+    //         String action = scan.next();
+    //         if (action.equals("list"))
+    //             cart.show();
+    //         else if (action.equals("add")) {
+    //             if (scan.hasNextLine())
+    //                 cart.addItems(scan.nextLine().trim());
+    //         }
+    //         else if (action.equals("delete")) {
+    //             if (scan.hasNextInt())
+    //                 try {
+    //                     cart.delete(scan.nextInt());
+    //                 } catch (IndexOutOfBoundsException e) {
+    //                     System.out.println("Incorrect item index");
+    //                 }
+    //             else
+    //                 System.out.println(scan.nextLine() + " is not a valid index number");
+    //         }
+    //         else if (action.equals("stop"))
+    //             break;
+    //     }
         
-        scan.close();
-    }
+    //     scan.close();
+    // }
 
     public void show()
     {
